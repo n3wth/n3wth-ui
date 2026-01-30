@@ -16,3 +16,22 @@ export {
   useIsTablet,
   useIsDesktop,
 } from './useMediaQuery'
+
+// Animation hooks (require gsap peer dependency)
+export { useCountUp } from './useCountUp'
+export type { UseCountUpOptions, UseCountUpReturn } from './useCountUp'
+
+export { useScrollReveal } from './useScrollReveal'
+export type { UseScrollRevealOptions } from './useScrollReveal'
+
+export { useStaggerList } from './useStaggerList'
+export type { UseStaggerListOptions } from './useStaggerList'
+
+export { usePageTransition } from './usePageTransition'
+export type { UsePageTransitionOptions } from './usePageTransition'
+
+export { useTextReveal } from './useTextReveal'
+export type { UseTextRevealOptions } from './useTextReveal'
+
+export { useButtonPulse } from './useButtonPulse'
+export type { UseButtonPulseOptions } from './useButtonPulse'

@@ -29,6 +29,12 @@ export type { HamburgerIconProps } from './atoms/HamburgerIcon'
 export { AnimatedText } from './atoms/AnimatedText'
 export type { AnimatedTextProps } from './atoms/AnimatedText'
 
+export { CodeBlock } from './atoms/CodeBlock'
+export type { CodeBlockProps } from './atoms/CodeBlock'
+
+export { Skeleton, CardSkeleton } from './atoms/Skeleton'
+export type { SkeletonProps, CardSkeletonProps } from './atoms/Skeleton'
+
 // Molecules
 export {
   Card,
@@ -58,6 +64,9 @@ export type { ThemeToggleProps } from './molecules/ThemeToggle'
 
 export { MobileDrawer } from './molecules/MobileDrawer'
 export type { MobileDrawerProps } from './molecules/MobileDrawer'
+
+export { ErrorBoundary, ErrorFallback } from './molecules/ErrorBoundary'
+export type { ErrorBoundaryProps, ErrorFallbackProps } from './molecules/ErrorBoundary'
 
 // Organisms
 export { Nav } from './organisms/Nav'
@@ -91,3 +100,21 @@ export {
   useIsTablet,
   useIsDesktop,
 } from './hooks/useMediaQuery'
+
+export { useCountUp } from './hooks/useCountUp'
+export type { UseCountUpOptions, UseCountUpReturn } from './hooks/useCountUp'
+
+export { useScrollReveal } from './hooks/useScrollReveal'
+export type { UseScrollRevealOptions } from './hooks/useScrollReveal'
+
+export { useStaggerList } from './hooks/useStaggerList'
+export type { UseStaggerListOptions } from './hooks/useStaggerList'
+
+export { usePageTransition } from './hooks/usePageTransition'
+export type { UsePageTransitionOptions } from './hooks/usePageTransition'
+
+export { useTextReveal } from './hooks/useTextReveal'
+export type { UseTextRevealOptions } from './hooks/useTextReveal'
+
+export { useButtonPulse } from './hooks/useButtonPulse'
+export type { UseButtonPulseOptions } from './hooks/useButtonPulse'
