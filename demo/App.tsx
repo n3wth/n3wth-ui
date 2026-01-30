@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { version } from '../package.json'
 import { Button } from '../src/atoms/Button'
 import { Badge } from '../src/atoms/Badge'
 import { Input } from '../src/atoms/Input'
@@ -35,9 +36,9 @@ export function App() {
 
       {/* Hero */}
       <Hero
-        badge="v0.2.2"
-        title={<>Flat. Minimal. <span style={{ opacity: 0.5 }}>Beautiful.</span></>}
-        description="Atomic design system for Newth sites. No shadows, no glows — just clean glass morphism."
+        badge={`v${version}`}
+        title="Flat. Minimal."
+        description={<>Atomic design system for Newth sites.<br />No shadows, no glows - just clean glass morphism.</>}
         ctas={[
           { label: 'Get Started', href: '#get-started' },
           { label: 'View Source', href: 'https://github.com/n3wth/n3wth-ui', variant: 'secondary' },
@@ -199,12 +200,23 @@ export function App() {
 
           {/* Icons */}
           <div>
-            <h3 className="text-lg font-medium mb-4 text-[var(--color-grey-400)]">Icons</h3>
-            <div className="flex flex-wrap gap-4">
-              {(['arrow-right', 'arrow-left', 'arrow-up', 'arrow-down', 'chevron-right', 'chevron-down', 'check', 'x', 'copy', 'search', 'menu', 'sun', 'moon', 'external', 'github', 'terminal', 'code', 'sparkles', 'plus', 'minus'] as const).map((name) => (
-                <div key={name} className="flex flex-col items-center gap-2 p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)]">
+            <h3 className="text-lg font-medium mb-4 text-[var(--color-grey-400)]">Icons (Iconoir)</h3>
+            <p className="text-sm text-[var(--color-grey-600)] mb-4">40+ icons from <a href="https://iconoir.com" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sage)] hover:underline">Iconoir</a> - consistent, minimal, iOS-inspired.</p>
+            <div className="flex flex-wrap gap-3">
+              {([
+                'arrow-right', 'arrow-left', 'arrow-up', 'arrow-down',
+                'chevron-right', 'chevron-left', 'chevron-up', 'chevron-down',
+                'check', 'x', 'copy', 'search', 'menu',
+                'sun', 'moon', 'external', 'github', 'terminal', 'code', 'sparkles',
+                'plus', 'minus', 'settings', 'user', 'heart', 'star', 'mail',
+                'calendar', 'clock', 'bell', 'home', 'folder', 'file', 'trash',
+                'edit', 'eye', 'eye-off', 'lock', 'unlock', 'link', 'external-link',
+                'download', 'upload', 'refresh', 'filter', 'sort', 'grid', 'list',
+                'more-horizontal', 'more-vertical', 'info', 'warning', 'success', 'error',
+              ] as const).map((name) => (
+                <div key={name} className="flex flex-col items-center gap-2 p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] min-w-[72px]">
                   <Icon name={name} size="md" />
-                  <span className="text-xs text-[var(--color-grey-400)]">{name}</span>
+                  <span className="text-[10px] text-[var(--color-grey-400)]">{name}</span>
                 </div>
               ))}
             </div>
@@ -343,7 +355,6 @@ export function App() {
             ],
           },
         ]}
-        copyright="2025 Oliver Newth. All rights reserved."
         theme={theme}
         onThemeToggle={toggleTheme}
       />

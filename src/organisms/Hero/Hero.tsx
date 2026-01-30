@@ -12,7 +12,7 @@ export interface HeroCTA {
 export interface HeroProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
   badge?: string
   title: ReactNode
-  description?: string
+  description?: ReactNode
   ctas?: HeroCTA[]
   align?: 'left' | 'center'
   size?: 'default' | 'large'
@@ -69,7 +69,7 @@ export function Hero({
             gradient ? 'hero-gradient-text' : 'text-[var(--color-white)]',
             'animate-in'
           )}
-          style={{ animationDelay: '0.1s' }}
+          style={{ animationDelay: '0.1s', textAlign: align === 'center' ? 'center' : 'left', width: '100%', display: 'block' }}
         >
           {title}
         </h1>

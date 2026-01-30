@@ -94,20 +94,22 @@ export function Footer({
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-[var(--glass-border)] flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          {copyright && (
-            <p className="text-xs text-[var(--color-grey-600)]">{copyright}</p>
-          )}
-          {bottomLinks.length > 0 && (
-            <div className="flex flex-wrap items-center gap-6">
-              {bottomLinks.map((link) => (
-                <NavLink key={link.href} href={link.href} variant="default">
-                  <span className="text-xs">{link.label}</span>
-                </NavLink>
-              ))}
-            </div>
-          )}
-        </div>
+        {(copyright || bottomLinks.length > 0) && (
+          <div className="mt-16 pt-8 border-t border-[var(--glass-border)] flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            {copyright && (
+              <p className="text-xs text-[var(--color-grey-600)]">{copyright}</p>
+            )}
+            {bottomLinks.length > 0 && (
+              <div className="flex flex-wrap items-center gap-6">
+                {bottomLinks.map((link) => (
+                  <NavLink key={link.href} href={link.href} variant="default">
+                    <span className="text-xs">{link.label}</span>
+                  </NavLink>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </footer>
   )
