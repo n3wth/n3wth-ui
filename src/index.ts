@@ -17,6 +17,18 @@ export type { InputProps } from './atoms/Input'
 export { Icon } from './atoms/Icon'
 export type { IconProps, IconName } from './atoms/Icon'
 
+export { NoiseOverlay } from './atoms/NoiseOverlay'
+export type { NoiseOverlayProps } from './atoms/NoiseOverlay'
+
+export { ScrollIndicator } from './atoms/ScrollIndicator'
+export type { ScrollIndicatorProps } from './atoms/ScrollIndicator'
+
+export { HamburgerIcon } from './atoms/HamburgerIcon'
+export type { HamburgerIconProps } from './atoms/HamburgerIcon'
+
+export { AnimatedText } from './atoms/AnimatedText'
+export type { AnimatedTextProps } from './atoms/AnimatedText'
+
 // Molecules
 export {
   Card,
@@ -43,6 +55,9 @@ export type { CommandBoxProps } from './molecules/CommandBox'
 
 export { ThemeToggle } from './molecules/ThemeToggle'
 export type { ThemeToggleProps } from './molecules/ThemeToggle'
+
+export { MobileDrawer } from './molecules/MobileDrawer'
+export type { MobileDrawerProps } from './molecules/MobileDrawer'
 
 // Organisms
 export { Nav } from './organisms/Nav'

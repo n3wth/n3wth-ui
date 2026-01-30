@@ -23,3 +23,6 @@ export type { CommandBoxProps } from './CommandBox'
 
 export { ThemeToggle } from './ThemeToggle'
 export type { ThemeToggleProps } from './ThemeToggle'
+
+export { MobileDrawer } from './MobileDrawer'
+export type { MobileDrawerProps } from './MobileDrawer'
