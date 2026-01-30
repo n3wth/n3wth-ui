@@ -11,7 +11,7 @@ Uses **OIDC trusted publishing** - no npm token needed. Authentication happens v
 **One-time setup on npmjs.com**:
 1. Go to https://www.npmjs.com/package/@n3wth/ui/access
 2. Find "Trusted Publisher" section → Select GitHub Actions
-3. Configure: org=`n3wth`, repo=`n3wth-ui`, workflow=`publish.yml`
+3. Configure: org=`n3wth`, repo=`ui`, workflow=`publish.yml`
 
 **To publish a new version**:
 1. Update version in `package.json`
