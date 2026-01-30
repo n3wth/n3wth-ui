@@ -7,6 +7,10 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   root: 'demo',
   publicDir: resolve(__dirname, 'public'),
+  build: {
+    outDir: resolve(__dirname, 'dist-demo'),
+    emptyOutDir: true
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src')
