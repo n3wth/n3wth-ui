@@ -101,7 +101,7 @@ export function MobileDrawer({
   const positionClass = position === 'right' ? 'right-0' : 'left-0'
 
   return (
-    <>
+    <div className={className}>
       {/* Backdrop overlay */}
       <div
         className={cn(
@@ -125,8 +125,7 @@ export function MobileDrawer({
           'fixed top-0 h-full',
           'transition-transform duration-300 ease-out',
           translateClass,
-          positionClass,
-          className
+          positionClass
         )}
         style={{
           width,
@@ -138,6 +137,6 @@ export function MobileDrawer({
       >
         {children}
       </div>
-    </>
+    </div>
   )
 }
