@@ -1,6 +1,6 @@
 {
   "name": "@n3wth/ui",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Atomic design system for Newth sites - flat, minimal, iOS-inspired",
   "type": "module",
   "main": "./dist/index.js",
@@ -56,6 +56,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/n3wth/ui"
+    "url": "https://github.com/n3wth/n3wth-ui"
   }
 }
